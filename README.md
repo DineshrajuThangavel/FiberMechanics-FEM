@@ -1,51 +1,37 @@
-📐 FiberMechanics-FEM – Plane Stress Simulation
-A Python-based finite element solver for analyzing the plane stress response of orthotropic composite bars under axial loading. Captures directional anisotropy through fiber-angle-dependent stiffness transformation and compares FEM results with analytical predictions. Developed as part of AI-Assisted Programming in Computational Mechanics (2025, TU Freiberg).
+🧮 Fiber Mechanics FEM – Plane Stress Simulation
+This project implements a finite element solver in Python to model the plane stress response of orthotropic composite bars under axial loading. The solver incorporates fiber-angle-dependent stiffness transformation and visualizes the resulting anisotropic behavior. Developed as part of a computational mechanics course.
 
-🚀 Key Features
-✅ Plane stress FEM using Q4 isoparametric elements
+📌 Features
+2D plane stress FEM using Q4 isoparametric elements
 
-✅ Rotated stiffness matrix for arbitrary fiber orientation
+Fiber orientation via analytical stiffness rotation
 
-✅ 4-point Gauss integration for element stiffness
+4-point Gauss quadrature for element integration
 
-✅ Newton–Raphson method for global system solving
+Newton–Raphson method for global equilibrium solving
 
-✅ Analytical comparison using compliance theory
+Analytical validation using compliance-based displacement
 
-✅ Mesh convergence with relative error analysis
+Mesh convergence study and fiber angle sweep analysis
 
-✅ Full sweep of fiber angles (0°–360°)
+🧾 Files
+anisotropic_bar_fem.py: Main Python script implementing the FEM solver, visualization, and analysis routines
+FiberMechanicsFEM_Report_2025.pdf: Full documentation with theory, implementation details, results, and plots
 
-✅ Displacement, stress, strain, and modulus visualization
-
-📂 Included Files
-File	Description
-anisotropic_bar_fem.py	Main Python script with FEM solver, postprocessing, and plots
-FiberMechanicsFEM_Report_2025.pdf	Final report detailing theory, implementation, and results
-
-📈 Generated Outputs
+📊 Outputs
 Structured mesh visualization
 
-Tip displacement vs. fiber angle
+Tip displacement vs fiber angle (0°–360°)
 
-Stress (σₓₓ) and strain (εₓₓ) plots
+Axial stress and strain plots
 
-Effective axial modulus vs. fiber angle
+Effective modulus vs fiber orientation
 
-Mesh convergence plot: relative error vs. DOFs
+Mesh refinement vs relative displacement error
 
-🧪 How to Run
-Ensure Python 3.x is installed with the following libraries:
-
-numpy
-
-matplotlib
-
-Then run the solver with:
-
-bash
-Copy
-Edit
-python anisotropic_bar_fem.py
 🎓 Academic Context
-This project was completed for the AI-Assisted Programming in Computational Mechanics (2025) course at TU Freiberg. It investigates fiber orientation effects on the axial response of anisotropic composites using FEM techniques implemented from scratch in Python.
+Developed as part of the 2025 course on AI-Assisted Programming in Computational Mechanics at TU Freiberg, this project investigates the effect of fiber orientation on composite bar response using a fully custom FEM solver.
+
+🔧 Technologies
+Python (NumPy, Matplotlib)
+FEM solver and postprocessing implemented entirely from scratch
