@@ -1,4 +1,4 @@
-# 🧮 Fiber Mechanics FEM – Plane Stress Simulation
+# 🧮 Fiber Orientation based Anisotropy
 
 This project implements a finite element solver in Python to model the plane stress behavior of orthotropic composite bars under axial loading. The solver captures anisotropic effects by rotating the stiffness matrix based on fiber orientation. Developed as part of a computational mechanics course.
 
